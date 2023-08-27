@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Mlodia Della Pizza </title>
+         <link href="Registration.css" rel="stylesheet">
+        <meta name="view" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+        <!--  *********************-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="icon" href="../image/favicon.ico">
+
+        
+    </head>
+    <body>
+        <section> 
+            <nav>
+               <a href="../index.html"><img src="../image/lo1.jpg"></a>
+               <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i> <!--it is icons-->
+                   <ul>
+                       <li><a href="../index.html">HOME</a></li>
+                       <li><a href="../index.html">ABOUT</a></li>
+                       <li><a href="../menu/menu.html">MENU</a></li>
+                       <li><a href="../index.html">Team</a></li>
+                       <li><a href="../index.html">CONTACT</a></li>
+                   </ul>
+               </div>
+               <i class="fa fa-bars " onclick="showMenu()"></i> <!--it is icons-->
+           </nav>
+           </section>
+        <script>
+           var navLinks = document.getElementById("navLinks");
+             function showMenu(){
+                navLinks.style.right="0";
+             }
+             function hideMenu(){
+                navLinks.style.right="-200px";
+             }
+         </script>
+
+
+        <div class="container">
+            <div class="title"> Registration </div>
+            <form acction="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="detalis"> Full Name</span>
+                        <input type="text" placeholder="Enter your name" required="">
+                    </div>
+                     <div class="input-box">
+                        <span class="detalis"> Email</span>
+                        <input type="text" placeholder="Enter your email" required="">
+                     </div>
+                     <div class="input-box">
+                        <span class="detalis"> Phone Number </span>
+                        <input type="text" placeholder="Enter your number" required="">
+                     </div>
+                         <div class="input-box">
+                        <span class="detalis"> City </span>
+                    <input list="City" placeholder="Enter your City" required="">
+                    <datalist id="City">
+                        <option value="Riyadh"> Riyadh </option>
+                        <option value="Jeddah">Jeddah </option>
+                        <option value="Dammam">  Dammam </option>
+                        <option value="Alkobar"> Alkobar </option>
+                        <option value="Medina"> Medina </option>
+                        <option value="Abha"> Abha </option>
+                        <option value="Hail"> Hail </option>
+                        <option value="Qassim"> Qassim </option>
+                    </datalist>
+                     </div>
+                    <br>
+                    <div class="input-box">
+                        <span class="detalis"> Address </span>
+                        <input type="text" placeholder="Enter your address" required="">
+                        <br> 
+                         </div>
+                    <br> 
+                    
+                <div class="button">
+                  <button class="mb">
+                      <a href="../thanks/thanks.html">order</a>
+                  </button>                  
+                </div>
+                    
+        </div>
+     </form>
+     </div>
+     </div> 
+  </body>
+</html>

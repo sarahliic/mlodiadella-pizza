@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linl for css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- links for icons browser-->
+    <link rel="icon" href="./image/favicon.ico" />
+    <title>Mlodia Della Pizza</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="./image/lo1.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <!--it is icons-->
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="./menu/menu.html">MENU</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#footer">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <!--it is icons-->
+      </nav>
+
+      <div class="text-box">
+        <h1 id="home">Mlodia Della Pizza</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit Maxime
+          maiores consequuntur<br />, suscipit tempore Sequi?
+        </p>
+        <a href="./menu/menu.html" class="hero-btn"> Our Menu</a>
+      </div>
+    </section>
+    <!--JavaScript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- ------ about section statr ------->
+    <section class="about-section sec-padding" id="about">
+      <div class="continer">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-tilte="our story">About Us</h2>
+          </div>
+        </div>
+        <div class="continer-two">
+          <div class="about-text">
+            <h3>welcome to Mlodia Della Pizza restaurant</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium dolorem quos assumenda velitng elit. Nobis ab modi
+              obcaecati sapiente, temporibus mollitia iusto deserunt veritatis
+              animi optio ex, culpa blanditiis odio explicabo! Corporis numquam
+              mollitia est Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+            <p>
+              Optio nam quos sietur adipisicing elit. Dolorum, tenetur libero!
+              Soluta, labore! Dolores sequi repellat ipsum exercitationem
+              quibusdam, facilis id distinctio sapiente iure tempore nisi
+              laborum modi. Rem, sint.
+            </p>
+            <a href="./menu/menu.html" class="hero-btn">check our menu</a>
+          </div>
+          <div class="about-img">
+            <div class="img-box">
+              <h3>20+ Experience</h3>
+              <img src="./image/pizza2.jpg" alt="about img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ about section end------->
+
+    <!-- team sction start--->
+    <section class="team-section sec-padding" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-tilte="team">our chefs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-item">
+            <img src="./image/1.jpg" alt="team-item" />
+            <div class="team-itme-infi">
+              <h3>jbhj</h3>
+              <p>Head chef</p>
+            </div>
+          </div>
+          <div class="team-item">
+            <img src="./image/2.jpg" alt="team-item" />
+            <div class="team-itme-infi">
+              <h3>jar jf</h3>
+              <p>Head chef</p>
+            </div>
+          </div>
+          <div class="team-item">
+            <img src="./image/3.jpg" alt="team-item" />
+            <div class="team-itme-infi">
+              <h3>hvj</h3>
+              <p>Head chef</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team sction end--->
+
+    <!-- footer start -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-item">
+            <h4>our location</h4>
+            <p>xyz, street, sector-12,<br />Al Kober- 0000****</p>
+          </div>
+          <div class="footer-item">
+            <h4>opening hours</h4>
+            <p>Monday to friday<br />9:00 AM -11:00 PM</p>
+          </div>
+          <div class="footer-item">
+            <h4>contact us</h4>
+            <p>996 123 456 ***</p>
+            <p>info@gmail.com</p>
+            <div class="socaial-links">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row-t">
+          <div class="copyright">
+            <p>&copy;2021 -Made With <i class="fa fa-heart-o"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end-->
+  </body>
+</html>
